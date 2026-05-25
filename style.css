@@ -17,7 +17,134 @@ main {
     padding: 40px 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+        padding: 80px 60px;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 80px;
+        align-items: start;
+    }
+
+    .sidebar {
+        position: sticky;
+        top: 80px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero {
+        margin-bottom: 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .avatar {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .contact {
+        margin-bottom: 0;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-links a {
+        padding: 14px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-links a span {
+        font-size: 0.85rem;
+    }
+
+    .info {
+        margin-bottom: 0;
+    }
+
+    .info-grid {
+        gap: 12px;
+    }
+
+    .info-item {
+        padding: 14px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-item span {
+        font-size: 0.85rem;
+    }
+
+    .payment {
+        margin-bottom: 0;
+    }
+
+    .payment-grid {
+        gap: 12px;
+    }
+
+    .payment-item {
+        padding: 14px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-value {
+        font-size: 0.75rem;
+    }
+
+    .skills {
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        font-size: 1.05rem;
+    }
+
+    .skills-grid {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .skill-card {
+        padding: 14px 18px;
+    }
+
+    .skill-name {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
     main {
         max-width: 700px;
         padding: 60px 40px;
@@ -288,6 +415,24 @@ main {
     font-size: 0.7rem;
     color: #e8e8e8;
     word-break: break-all;
+}
+
+.examples {
+    margin-bottom: 30px;
+}
+
+.examples-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.example-image {
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 2px;
+    display: block;
+    object-fit: cover;
 }
 
 footer {
