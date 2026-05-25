@@ -428,9 +428,9 @@ main {
 }
 
 .example-image {
-    width: 30px !important;
-    height: 30px !important;
-    border-radius: 2px;
+    width: 300px !important;
+    height: auto !important;
+    border-radius: 8px;
     display: block;
     object-fit: cover;
 }
