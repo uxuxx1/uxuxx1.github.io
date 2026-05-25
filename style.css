@@ -428,8 +428,8 @@ main {
 }
 
 .example-image {
-    width: 300px !important;
-    height: 300px !important;
+    width: 30px !important;
+    height: 30px !important;
     border-radius: 2px;
     display: block;
     object-fit: cover;
